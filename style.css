@@ -1,0 +1,230 @@
+.new{text-align: center;
+    color: red;
+}
+
+.hello{
+    color: red;
+}
+
+#nomore {
+color: yellow;
+}
+
+.border { 
+    border: 5px dashed green ;
+    margin: 30px 450px 30px 0px;
+    padding: 30px 0px 30px 5px;
+
+}
+
+.box {
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    margin: 10px ;
+    
+}
+
+
+.flex {border: 3px solid black;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+
+@keyframs fademe {
+    
+    0% {
+    opacity: 0;}
+    100% {
+    opacity: 1;}
+
+}
+
+    #box1 {
+         animation-name: fademe;
+         animation-duration: 4s;
+         animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes rotation {
+        0%{ transform: rotate(90deg);}
+        50%{transform: rotate(180deg);}
+        100%{transform: rotate(360deg);}
+
+      
+    }
+
+    
+
+    #box2 {animation-name: rotation;
+        animation-duration: 5s;
+        animation-iteration-count: 4;
+        animation-timing-function: ease-in-out;
+        border-radius: 10%;
+        background-image: radial-gradient(circle, purple, orange, yellow, pink, purple); 
+
+    }
+    @keyframes getbigger {
+        0%{transform: scale(1);}
+        50%{transform: scale(1.25);}
+        100%{transform: scale(.5);}
+    }
+    
+    #box3 {
+        animation: getbigger infinite 8s ease-in;
+        border-radius: 50%;
+        background-color: orange;
+    }
+    @keyframes changingcolor {
+        0%{background-color: gray;}
+        25%{background-color: yellow;}
+        50%{background-color: purple;}
+        75%{background-color: pink;}
+        100%{background-color: gray;}
+    }
+
+    #box4 {animation: changingcolor 7s 2 forwards;}
+   
+    
+    @keyframes movebox{
+        0%{left: 0px; top: 0px;}
+        25%{left: 100px; top: 0px;}
+        50%{left: 100px; top: 200px;}
+        75%{left: 0px; top: 200px;}
+        100%{left: 0px; top: 0px;}
+    }
+
+    #box5 {
+        position: relative;
+        background-color: red;
+        animation: movebox 5s ;
+        animation-iteration-count: 5;
+    }
+
+#box6 {
+    top: 00px;
+    left: 00px;
+    position: relative;
+}
+html{
+    background-color: rgb(247, 247, 247);
+}
+
+
+nav {
+    background-color: honeydew;
+    text-align: center;
+
+
+}
+
+.nav-wrapper {
+    background-color: blue;
+}
+a {
+    text-decoration-line: none;
+
+}
+
+nav ul{ list-style: none;
+
+}
+
+nav li{display: inline-block;
+    padding: 30px ; 
+
+}
+.circel-img {border-radius: 50%;
+
+}
+img{ box-shadow: 8px 8px 10px 10px gray;}
+
+.headpage {text-align: center;}
+
+
+form, input, textarea, button {
+    display: block;
+    margin: 30px;
+}
+
+.contact-box{
+    display: flex; 
+    justify-content: center;
+    
+}
+.row{
+    margin: 30px;
+}
+.input-field {
+    margin: 30px;
+  
+}
+.about-page{
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: #fff;
+    color: #444;
+}
+
+.Box {
+    background-color:#fff;
+    color: #fff;
+    border-radius: 5px; 
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+}
+
+.a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.b {
+    grid-column: col 4 / span  6 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.c {
+    grid-column: col /span 5 ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(pink, yellow, purple, orange);
+}
+.d {
+    grid-column: col  / span  3 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+}
+
+.e {
+    grid-column: col 3 / span  3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+}
+
+.f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(pink, purple, yellow, orange);
+}
